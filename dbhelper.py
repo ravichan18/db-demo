@@ -5,7 +5,7 @@ class DBhelper:
     def __init__(self):
         # connect to database
         try:
-            self.conn = mysql.connector.connect(host="localhost", user="root", password="",database="hit-db-demo")
+            self.conn = mysql.connector.connect(host="localhost", user="root", password="",database="db-demo")
             # create cursor
             self.mycursor = self.conn.cursor()
             print("Connected to database")
